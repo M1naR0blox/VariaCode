@@ -2,12 +2,13 @@ import time
 import random
 import os
 
+
 # Print text()
 
 def text():
     print()
 
-# To use, put variables between
+# To use, put variables betweeN
 
 variable = 2 + 2
 
@@ -66,13 +67,13 @@ def equal(intedinput, answertointinput):
 
 
 
-intedinput = numtype(intinput)
+### intedinput = numtype(intinput)
 
-lower(intedinput, answertointinput)
+### lower(intedinput, answertointinput)
 
-higher(intedinput, answertointinput)
+### higher(intedinput, answertointinput)
 
-equal(intedinput, answertointinput)
+### equal(intedinput, answertointinput)
 
 # Random = numbers
 
@@ -83,4 +84,41 @@ randomresult = 0
 def randomnum(minnumber, maxnumber):
     randomresult = random.randint(minnumber, maxnumber)
     print(randomresult)
-randomnum(minnumber, maxnumber)
+
+# Sum
+textperm = "True"
+sum1 = 2
+sum2 = 2
+def sum(sum1, sum2):
+    sum3 = sum1 + sum2
+    if textperm == "True":
+        print(sum3)
+
+# Less
+rest1 = 5
+rest2 = 3
+def rest(rest1, rest2):
+    rest3 = rest1 - rest2
+    if textperm == "True":
+        print(rest3)
+
+# Multiply
+multiply = 2
+multiply2 = 69
+def multiplier(multiply, multiply2):
+    multiply3 = multiply * multiply2
+    if textperm == "True":
+        print(multiply3)
+
+# Division
+division1 = 50
+division2 = 2
+def division(division1, division2):
+    division3 = division1 / division2
+    if textperm == "True":
+        print(division3)
+
+# Close
+
+def leave():
+    exit()
