@@ -2,123 +2,164 @@ import time
 import random
 import os
 
+textperm = "False"
 
-# Print text()
+# VariaCode related thing
 
-def text():
-    print()
+def text(arg):
+    print(arg)
 
-# To use, put variables betweeN
 
-variable = 2 + 2
+def sleep(arg1):
+    time.sleep(arg1)
 
-def text(variable):
-    print(variable)
 
-# clear()
 def clear():
     os.system("clear")
 
-# Sleep
-def sleep():
-    time.sleep(1)  
 
-# Input
-
-inpvariable = "Do you like oranges? "
-
-def type(prompt):
-    return input(prompt)
-
-# inputvariable = type(inpvariable)
-
-# int(input)
-
-intinput = "How many numbers does 10 have? "
-
-def numtype(prompt2):
-    return int(input(prompt2))
-
-# intedinput = numtype(intinput)
-
-# if stataments = higher
-
-answertointinput = 2
-
-fail = "you failed the question"
-
-def higher(intedinput, answertointinput):
-    if intedinput > answertointinput:
-        text(fail)
-
-# if statements = lower
-
-def lower(intedinput, answertointinput):
-    if intedinput < answertointinput:
-        text(fail)
-
-# if statements = equal
-
-success = "You got right the answer."
-
-def equal(intedinput, answertointinput):
-    if intedinput == answertointinput:
-        text(success)        
+def random_num(arg2, arg3):
+    arg4 = random.randint(arg2, arg3)
+    return arg4
+    if textperm == "True":
+        print(arg4)
 
 
+def random_letter(arg5, arg6):
+    arg7 = random.randint(arg5, arg6)
+    if textperm == "True":
+        print(arg7)
 
-### intedinput = numtype(intinput)
 
-### lower(intedinput, answertointinput)
+def userprompt(prompt):
+    usarp = input(prompt)
+    if textperm == "True":
+        print(usarp)
 
-### higher(intedinput, answertointinput)
 
-### equal(intedinput, answertointinput)
+def numbprompt(prompt):
+    usar = int(input(prompt))
+    if textperm == "True":
+        print(usar)
 
-# Random = numbers
 
-minnumber = 1
-maxnumber = 100
-randomresult = 0
+def higher(num1, num2):
+    if num1 > num2:
+        # Change code
+        something = 0
 
-def randomnum(minnumber, maxnumber):
-    randomresult = random.randint(minnumber, maxnumber)
-    print(randomresult)
 
-# Sum
-textperm = "True"
-sum1 = 2
-sum2 = 2
+def less(num3, num4):
+    if num3 < num4:
+        # Change code
+        something = 0
+
+def equ4l(num5, num6):
+    if num5 == num6:
+        # Change code
+        while True:
+            if num5 == num6:
+                break
+
+def equal(num5, num6):
+    if num5 == num6:
+        # Change code
+        something = 0
+
+
 def sum(sum1, sum2):
     sum3 = sum1 + sum2
     if textperm == "True":
         print(sum3)
 
-# Less
-rest1 = 5
-rest2 = 3
-def rest(rest1, rest2):
-    rest3 = rest1 - rest2
-    if textperm == "True":
-        print(rest3)
 
-# Multiply
-multiply = 2
-multiply2 = 69
-def multiplier(multiply, multiply2):
-    multiply3 = multiply * multiply2
+def less(less1, less2):
+    less3 = less1 - less2
+    if textperm == "True":
+        print(less3)
+
+
+def multiply(multiply1, multiply2):
+    multiply3 = multiply1 * multiply2
     if textperm == "True":
         print(multiply3)
 
-# Division
-division1 = 50
-division2 = 2
-def division(division1, division2):
-    division3 = division1 / division2
-    if textperm == "True":
-        print(division3)
 
-# Close
+def divide(divide1, divide2):
+    divide3 = divide1 / divide2
+    if textperm == "True":
+        print(divide3)
+
+
+def loading_anim():
+    clear()
+    print("Loading")
+    sleep(0.2)
+    clear()
+    print("Loading.")
+    sleep(0.2)
+    clear()
+    print("Loading..")
+    sleep(0.2)
+    clear()
+    print("Loading...")
+    sleep(0.2)
+    clear()
+    print("Loading")
+    sleep(0.2)
+    clear()
+    print("Loading.")
+    sleep(0.2)
+    clear()
+    print("Loading..")
+    sleep(0.2)
+    clear()
+    print("Loading...")
+    sleep(0.2)
+    clear()
+
+
+def calculator():
+    loading_anim()
+    print("Calculator by VariaCode")
+    sleep(0.5)
+    print("[1] Sum")
+    sleep(0.5)
+    print("[2] Less")
+    sleep(0.5)
+    print("[3] Multiply")
+    sleep(0.5)
+    print("[4] Divide")
+    sleep(0.5)
+    option = int(input(">>> "))
+    while True:
+        if option == 1:
+            textperm = True
+            u = int(input("Input first number "))
+            i = int(input("Input second number "))
+            sum(u, i)
+            textperm = False
+        if option == 2:
+            textperm = True
+            u = int(input("Input first number "))
+            i = int(input("Input second number "))
+            less(u, i)
+            textperm = False
+        if option == 3:
+            textperm = True
+            u = int(input("Input first number "))
+            i = int(input("Input second number "))
+            multiply(u, i)
+            textperm = False
+        if option == 3:
+            textperm = True
+            u = int(input("Input first number "))
+            i = int(input("Input second number "))
+            divide(u, i)
+            textperm = False
+        if option == 69 or option == 420 or option > 7 or option < 68:
+            break
+
 
 def leave():
     exit()
