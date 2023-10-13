@@ -4,6 +4,7 @@ import os
 
 textperm = "False"
 
+
 # VariaCode related thing
 
 def text(arg):
@@ -54,12 +55,14 @@ def less(num3, num4):
         # Change code
         something = 0
 
+
 def equ4l(num5, num6):
     if num5 == num6:
         # Change code
         while True:
             if num5 == num6:
                 break
+
 
 def equal(num5, num6):
     if num5 == num6:
@@ -163,7 +166,34 @@ def calculator():
 
 def leave():
     exit()
-    
+
+
 def windowsonly_startfile(arg1):
     os.startfile(arg1)
 
+def games(option):
+    if option == "":
+        text("To choose a game, please put in on the code")
+
+    if option == "help":
+        text("Type the name, not the number")
+        text("1.- Guess the number")
+        text("2.- Coming soon")
+
+    if option == "Guess the number":
+        randomnumber = random_num(1, 100000)
+        text("Guess the number")
+        while True:
+            playernumber = int(input(">>> "))
+            if playernumber > randomnumber:
+                text("You Passed It")
+            if playernumber < randomnumber:
+                text("You Havent Passed It")
+            if playernumber == randomnumber:
+                text("You Won!")
+            if playernumber == "break":
+                break
+
+
+    else:
+        text("This game aint existing")
