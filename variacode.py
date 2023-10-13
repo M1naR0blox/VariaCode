@@ -163,3 +163,7 @@ def calculator():
 
 def leave():
     exit()
+    
+def windowsonly_startfile(arg1):
+    os.startfile(arg1)
+
