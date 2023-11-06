@@ -25,3 +25,16 @@ def guess_the_num():
 
     else:
         text("This game aint existing")
+
+def dice(leave_empty_with_commas):
+    if leave_empty_with_commas == "help":
+        print("it aint a game but it is something")
+
+    computer_choice = random.randint(1, 6)
+    your_choice = input("Roll the dice y/n ")
+    if your_choice == "y":
+        your_choice = random.randint(1, 6)
+        print(f"Your dice rolled {your_choice}")
+        print(f"while the computer rolled {computer_choice}")
+    else:
+        print("see ya")
