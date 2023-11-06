@@ -100,5 +100,3 @@ def calculator():
             textperm = False
         if option == 69 or option == 420 or option > 7 or option < 68:
             break
-
-calculator()
