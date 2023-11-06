@@ -78,3 +78,22 @@ def leave():
 
 def windowsonly_startfile(arg1):
     os.startfile(arg1)
+
+def kind(str):
+    helper = type(str)
+    print(f"It is a {helper}")
+
+def lenght(str):
+    helper = len(str)
+    if helper == 1:
+        print(f"It has {helper} character")
+    elif helper > 1:
+        print(f"It has {helper} characters")
+    else:
+        print("it has none :v")
+
+def first_cap(variable):
+    helper = variable.capitalize()
+    print(helper)
+
+
