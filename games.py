@@ -38,3 +38,20 @@ def dice(leave_empty_with_commas):
         print(f"while the computer rolled {computer_choice}")
     else:
         print("see ya")
+
+def timer(seconds):
+    start = input("Start >>> ")
+    if start == "yes" or start == "Yes":
+        def clear():
+            import os
+            os.system("clear")
+
+        second = seconds
+        while True:
+            second -= 1
+            print(second)
+            clear()
+            time.sleep(1)
+            if second == 0:
+                break
+        print("It finished!")
