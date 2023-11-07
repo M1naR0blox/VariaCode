@@ -96,4 +96,6 @@ def first_cap(variable):
     helper = variable.capitalize()
     print(helper)
 
-
+def round_nums(num, num1):
+    num3 = round(num, num1)
+    print(num3)
