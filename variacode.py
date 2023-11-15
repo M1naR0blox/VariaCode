@@ -99,3 +99,22 @@ def first_cap(variable):
 def round_nums(num, num1):
     num3 = round(num, num1)
     print(num3)
+
+def loading_text(text, times):
+    x = 0
+    while True:
+        print(text)
+        time.sleep(0.2)
+        clear()
+        print(f"{text}.")
+        time.sleep(0.2)
+        clear()
+        print(f"{text}..")
+        time.sleep(0.2)
+        clear()
+        print(f"{text}...")
+        time.sleep(0.2)
+        clear()
+        x += 1
+        if x == times:
+            break
